@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CV Analyzer</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body class="bg-white">
+  <header class="navbar">
+    <div class="container navbar-inner">
+      <a href="Home.html" class="brand">
+        <span class="brand-icon">📄</span>
+        <span>CV Analyzer</span>
+      </a>
+      <nav class="nav-links">
+        <a href="#how-it-works">How it works</a>
+        <a href="Dashbord.html">Dashboard</a>
+        <a href="login.html">Login</a>
+        <a href="Register.html" class="btn btn-outline btn-sm">Register</a>
+        <a href="Analyze.html" class="btn btn-dark btn-sm">Get Started &rarr;</a>
+      </nav>
+    </div>
+  </header>
+  <main>
+    <section class="hero">
+      <div class="container hero-grid">
+        <div>
+          <p class="eyebrow">YOUR NEXT OPPORTUNITY STARTS HERE</p>
+          <h1 class="hero-title">Make your CV match the opportunity.</h1>
+          <p class="hero-subtitle">Analyze your CV against a specific job offer and get AI-powered recommendations to improve it.</p>
+          <div class="hero-actions">
+            <a href="Analyze.html" class="btn btn-dark">Analyze My CV &rarr;</a>
+            <a href="Create.html" class="btn btn-outline">Create My CV</a>
+          </div>
+          <p class="hero-note">Improve your CV without inventing qualifications.</p>
+        </div>
+        <div class="preview-wrapper">
+          <div class="preview-top-grid">
+            <div class="mini-card">
+              <div class="mini-card-header"><span>Your CV</span></div>
+              <p style="font-weight: 700; font-size: 0.85rem;">Production Designer 7 Years</p>
+              <p style="font-size: 0.75rem; color: var(--text-muted); margin-bottom: 8px;">English speaking</p>
+              <p style="font-size: 0.78rem; color: var(--text-secondary);">Research, prototyping, and consumer expert, accessibility.</p>
+            </div>
+            <div class="mini-card">
+              <div class="mini-card-header"><span>Job Offer</span></div>
+              <p style="font-weight: 700; font-size: 0.85rem;">Senior Product Designer</p>
+              <p style="font-size: 0.75rem; color: var(--text-muted); margin-bottom: 8px;">Back Market</p>
+              <p style="font-size: 0.78rem; color: var(--text-secondary);">Research, prototyping, system design, accessibility.</p>
+            </div>
+          </div>
+          <div class="mini-card">
+            <div class="mini-card-header">
+              <span>📄 Analysis Result</span>
+              <span class="badge badge-green">78% Match Score</span>
+            </div>
+            <p class="skill-group-label">MATCHING SKILLS</p>
+            <div class="pill-list">
+              <span class="badge badge-green">Prototyping</span>
+              <span class="badge badge-green">Research</span>
+              <span class="badge badge-green">Accessibility</span>
+            </div>
+            <p class="skill-group-label">MISSING REQUIREMENTS</p>
+            <div class="pill-list">
+              <span class="badge badge-yellow">System Design</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="how-it-works" class="how-section">
+      <div class="container">
+        <h2 class="section-heading">How it works</h2>
+        <div class="steps-grid">
+          <div class="card">
+            <div class="step-circle">1</div>
+            <h3 style="font-size: 1rem; margin-bottom: 8px;">Create or Upload Your CV</h3>
+            <p style="font-size: 0.88rem; color: var(--text-secondary);">Start by uploading your latest CV or create one from our professional templates.</p>
+          </div>
+          <div class="card">
+            <div class="step-circle">2</div>
+            <h3 style="font-size: 1rem; margin-bottom: 8px;">Add a Job Offer</h3>
+            <p style="font-size: 0.88rem; color: var(--text-secondary);">Paste the job description or link to the role you're applying for.</p>
+          </div>
+          <div class="card">
+            <div class="step-circle">3</div>
+            <h3 style="font-size: 1rem; margin-bottom: 8px;">Get AI-Powered Recommendations</h3>
+            <p style="font-size: 0.88rem; color: var(--text-secondary);">Our AI engine compares your skills to the job requirements and suggests improvements.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <script src="app.js"></script>
+</body>
+</html>

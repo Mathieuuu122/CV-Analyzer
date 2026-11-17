@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Workspace Dashboard — CV Analyzer</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="navbar">
+    <div class="container navbar-inner">
+      <a href="Home.html" class="brand">
+        <span class="brand-icon">📄</span>
+        <span>CV Analyzer</span>
+      </a>
+      <nav class="nav-links">
+        <a href="Dashbord.html" style="color: var(--color-primary); font-weight: 700;">Workspace</a>
+        <a href="Create.html">Create CV</a>
+        <a href="Analyze.html" class="btn btn-primary btn-sm">+ New Analysis</a>
+      </nav>
+    </div>
+  </header>
+  <main class="container" style="padding-bottom: 48px;">
+    <div class="workspace-header">
+      <div class="workspace-top-bar">
+        <span>Workspace &gt; Overview</span>
+        <span id="dashboard-user-badge">🔒 Private workspace</span>
+      </div>
+      <h1 class="page-title">Your Workspace</h1>
+      <p class="page-subtitle">Manage your saved CVs and review previous AI job match analyses.</p>
+    </div>
+    <div class="grid-3" style="margin-bottom: 28px;">
+      <div class="card">
+        <p class="form-label">SAVED CVS</p>
+        <p id="stat-cv-count" style="font-size: 1.75rem; font-weight: 800; margin-top: 4px;">2</p>
+      </div>
+      <div class="card">
+        <p class="form-label">COMPLETED ANALYSES</p>
+        <p id="stat-analysis-count" style="font-size: 1.75rem; font-weight: 800; margin-top: 4px;">1</p>
+      </div>
+      <div class="card">
+        <p class="form-label">AVERAGE MATCH SCORE</p>
+        <p style="font-size: 1.75rem; font-weight: 800; color: var(--badge-green-text); margin-top: 4px;">78%</p>
+      </div>
+    </div>
+    <div class="grid-2">
+      <section>
+        <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 12px;">
+          <h2 style="font-size: 1.1rem;">My CVs</h2>
+          <a href="Create.html" class="link-primary">+ Create new CV</a>
+        </div>
+        <div id="dashboard-cv-list" style="display: flex; flex-direction: column; gap: 12px;"></div>
+      </section>
+      <section>
+        <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 12px;">
+          <h2 style="font-size: 1.1rem;">Recent AI Analyses</h2>
+          <a href="Analyze.html" class="link-primary">Run new analysis &rarr;</a>
+        </div>
+        <div id="dashboard-analysis-list" style="display: flex; flex-direction: column; gap: 12px;"></div>
+      </section>
+    </div>
+  </main>
+  <script src="app.js"></script>
+</body>
+</html>

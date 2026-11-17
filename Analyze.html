@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Analyze Your CV — CV Analyzer</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main class="container">
+    <div class="workspace-header">
+      <div class="workspace-top-bar">
+        <span><a href="Dashbord.html">Workspace</a> &gt; <strong>Analyze CV</strong></span>
+        <span>ℹ️</span>
+      </div>
+      <h1 class="page-title">Analyze Your CV</h1>
+      <p class="page-subtitle">Compare your CV with a job offer and discover areas for improvement.</p>
+    </div>
+    <div class="stepper-bar">
+      <div class="step-item active">
+        <span class="step-num">1</span>
+        <span>Your CV</span>
+      </div>
+      <div class="step-item">
+        <span class="step-num">2</span>
+        <span>Job Offer</span>
+      </div>
+      <div class="step-item">
+        <span class="step-num">3</span>
+        <span>Analysis</span>
+      </div>
+    </div>
+    <div class="grid-2" style="margin-bottom: 20px;">
+      <div class="card">
+        <div style="margin-bottom: 16px;">
+          <h2 style="font-size: 1rem;">📄 Your CV</h2>
+          <p style="font-size: 0.82rem; color: var(--text-muted);">Choose the CV you want to analyze.</p>
+        </div>
+        <div class="form-group">
+          <select id="existing-cv-select" class="form-select">
+            <option value="">No CV selected — Choose a saved CV or upload below</option>
+          </select>
+        </div>
+        <p class="divider-text">or upload a new CV</p>
+        <div id="cv-dropzone" class="dropzone">
+          <div style="font-size: 1.5rem; color: var(--color-primary); margin-bottom: 8px;">☁️</div>
+          <p id="dropzone-filename" style="font-weight: 600; font-size: 0.9rem;">Drag and drop your CV here</p>
+          <p style="font-size: 0.78rem; color: var(--text-muted); margin: 4px 0 14px;">PDF or DOCX &middot; Up to 5 MB</p>
+          <input type="file" id="cv-file-input" accept=".pdf,.doc,.docx" hidden />
+          <button type="button" id="browse-cv-btn" class="btn btn-outline btn-sm">Browse files</button>
+        </div>
+        <div style="text-align: center; margin-top: 16px;">
+          <a href="Create.html" class="link-primary">⊕ Create a CV from scratch ↗</a>
+        </div>
+      </div>
+      <div class="card">
+        <div style="margin-bottom: 16px;">
+          <h2 style="font-size: 1rem;">💼 Job Offer</h2>
+          <p style="font-size: 0.82rem; color: var(--text-muted);">Tell us about your next opportunity.</p>
+        </div>
+        <div class="grid-2" style="gap: 12px;">
+          <div class="form-group">
+            <label class="form-label" for="job-title">Job Title</label>
+            <input class="form-input" type="text" id="job-title" placeholder="Enter job title" />
+          </div>
+          <div class="form-group">
+            <label class="form-label" for="job-company">Company</label>
+            <input class="form-input" type="text" id="job-company" placeholder="Enter company" />
+          </div>
+        </div>
+        <div class="form-group">
+          <label class="form-label" for="job-description">Job Description</label>
+          <textarea class="form-textarea" id="job-description" placeholder="Paste the full job description here.&#10;&#10;• Include responsibilities&#10;• Include requirements&#10;• Include nice-to-haves"></textarea>
+        </div>
+        <p style="font-size: 0.75rem; color: var(--text-muted);">🔒 Your CV and job offer stay private. They're only used to generate your analysis and are never shared with employers.</p>
+      </div>
+    </div>
+    <p style="font-size: 0.8rem; color: var(--text-muted); margin-bottom: 24px;">ℹ️ Use the full job description for more relevant, personalized recommendations.</p>
+  </main>
+  <footer class="action-footer">
+    <div class="container action-footer-inner">
+      <span style="font-size: 0.82rem; color: var(--text-muted);">Your next opportunity starts with a stronger CV.</span>
+      <div class="action-buttons">
+        <a href="Dashbord.html" class="btn btn-outline">Cancel</a>
+        <button type="button" id="run-analysis-btn" class="btn btn-primary">✨ Analyze with AI</button>
+      </div>
+    </div>
+  </footer>
+  <script src="app.js"></script>
+</body>
+</html>

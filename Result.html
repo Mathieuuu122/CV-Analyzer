@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Analysis Result — CV Analyzer</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main class="container">
+    <div class="workspace-header">
+      <div class="workspace-top-bar">
+        <span><a href="Dashbord.html">Workspace</a> &gt; <a href="Analyze.html">Analyze CV</a> &gt; <strong>Result</strong></span>
+        <span>🔒 Private workspace</span>
+      </div>
+      <h1 class="page-title">AI Compatibility Analysis</h1>
+      <p id="result-subtitle" class="page-subtitle">Comparing your CV against Senior Product Designer at Back Market</p>
+    </div>
+    <div class="stepper-bar">
+      <div class="step-item completed">
+        <span class="step-num">✓</span>
+        <span>Your CV</span>
+      </div>
+      <div class="step-item completed">
+        <span class="step-num">✓</span>
+        <span>Job Offer</span>
+      </div>
+      <div class="step-item active">
+        <span class="step-num">3</span>
+        <span>Analysis</span>
+      </div>
+    </div>
+    <div class="grid-2" style="margin-bottom: 24px;">
+      <div class="card">
+        <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 16px;">
+          <h2 style="font-size: 1.05rem;">Compatibility Score</h2>
+          <span id="result-score-badge" class="badge badge-green" style="font-size: 0.95rem; padding: 6px 14px;">78% Match Score</span>
+        </div>
+        <p class="skill-group-label">MATCHING SKILLS</p>
+        <div id="result-matching-skills" class="pill-list" style="margin-bottom: 16px;"></div>
+        <p class="skill-group-label">MISSING REQUIREMENTS</p>
+        <div id="result-missing-skills" class="pill-list"></div>
+      </div>
+      <div class="card">
+        <h2 style="font-size: 1.05rem; margin-bottom: 12px;">AI Recommendations</h2>
+        <ul id="result-recommendations" style="padding-left: 18px; display: flex; flex-direction: column; gap: 10px; font-size: 0.88rem; color: var(--text-secondary);"></ul>
+      </div>
+    </div>
+    <div class="card" style="margin-bottom: 32px;">
+      <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 10px; flex-wrap: wrap; gap: 10px;">
+        <div>
+          <h2 style="font-size: 1.05rem;">Suggested Improved Summary (Approval Required)</h2>
+          <p style="font-size: 0.8rem; color: var(--text-muted);">Review and approve AI phrasing updates without inventing qualifications.</p>
+        </div>
+        <button type="button" id="approve-improvement-btn" class="btn btn-primary btn-sm">Approve &amp; Apply to CV</button>
+      </div>
+      <p id="result-improved-summary" style="background: var(--bg-page); padding: 14px; border-radius: var(--radius-md); font-size: 0.88rem; border: 1px solid var(--border-light);"></p>
+    </div>
+  </main>
+  <footer class="action-footer">
+    <div class="container action-footer-inner">
+      <span style="font-size: 0.82rem; color: var(--text-muted);">Analysis generated via simulated AI JSON response.</span>
+      <div class="action-buttons">
+        <a href="Analyze.html" class="btn btn-outline">Run Another Analysis</a>
+        <a href="Dashbord.html" class="btn btn-dark">Save to Workspace</a>
+      </div>
+    </div>
+  </footer>
+  <script src="app.js"></script>
+</body>
+</html>

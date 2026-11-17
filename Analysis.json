@@ -1,0 +1,54 @@
+{
+  "user": {
+    "name": "Kuiate Mathieu",
+    "email": "kuiate.mathieu@example.com"
+  },
+  "savedCVs": [
+    {
+      "id": "cv-1",
+      "title": "Production Designer 7 Years",
+      "updatedAt": "2026-11-14",
+      "summary": "English speaking. Research, prototyping, and consumer expert, accessibility.",
+      "skills": [
+        "Prototyping",
+        "Research",
+        "Accessibility",
+        "Figma",
+        "User Testing"
+      ]
+    },
+    {
+      "id": "cv-2",
+      "title": "Junior AI & Full-Stack Developer",
+      "updatedAt": "2026-11-10",
+      "summary": "Computer Science & AI student skilled in Python, HTML/CSS, JS, and SQL.",
+      "skills": [
+        "HTML",
+        "CSS",
+        "JavaScript",
+        "Python",
+        "SQL"
+      ]
+    }
+  ],
+  "defaultAnalysis": {
+    "matchScore": 78,
+    "cvTitle": "Production Designer 7 Years",
+    "jobTitle": "Senior Product Designer",
+    "company": "Back Market",
+    "matchingSkills": [
+      "Prototyping",
+      "Research",
+      "Accessibility"
+    ],
+    "missingRequirements": [
+      "System Design"
+    ],
+    "recommendations": [
+      "Add a dedicated bullet point detailing reusable UI component libraries to cover System Design.",
+      "Quantify the impact of your accessibility improvements (e.g., WCAG AA compliance).",
+      "Mirror key terms from the job description such as 'cross-functional collaboration'."
+    ],
+    "improvedSummary": "Senior Product & Production Designer with 7+ years of experience in user research, rapid prototyping, WCAG accessibility, and scalable Design Systems."
+  }
+}

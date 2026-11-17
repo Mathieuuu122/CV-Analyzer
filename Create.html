@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Create Your CV — CV Analyzer</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main class="container">
+    <div class="workspace-header">
+      <div class="workspace-top-bar">
+        <span><a href="Dashbord.html">Workspace</a> &gt; <strong>My CV / Create</strong></span>
+        <span>🔒 Private workspace</span>
+      </div>
+      <h1 class="page-title">Create Your CV</h1>
+      <p class="page-subtitle">Build your professional CV step by step.</p>
+    </div>
+    <form id="cv-builder-form" style="display: flex; flex-direction: column; gap: 18px; margin-bottom: 32px;">
+      <div class="card">
+        <h2 style="font-size: 0.98rem; margin-bottom: 14px;">👤 Personal Information</h2>
+        <div class="grid-2" style="gap: 14px;">
+          <div class="form-group">
+            <label class="form-label">Full name</label>
+            <input class="form-input" id="cv-fullname" type="text" placeholder="Enter your full name" />
+          </div>
+          <div class="form-group">
+            <label class="form-label">Email address</label>
+            <input class="form-input" id="cv-email" type="email" placeholder="Enter your email address" />
+          </div>
+          <div class="form-group">
+            <label class="form-label">Phone number</label>
+            <input class="form-input" id="cv-phone" type="text" placeholder="Enter your phone number" />
+          </div>
+          <div class="form-group">
+            <label class="form-label">Location</label>
+            <input class="form-input" id="cv-location" type="text" placeholder="Enter your city and country" />
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 14px;">
+          <h2 style="font-size: 0.98rem;">🎓 Education</h2>
+          <button type="button" id="add-education-btn" class="link-primary">+ Add education</button>
+        </div>
+        <div id="education-list">
+          <div class="grid-3 education-row" style="margin-bottom: 10px;">
+            <div class="form-group">
+              <label class="form-label">Degree</label>
+              <input class="form-input" type="text" placeholder="Enter your degree" />
+            </div>
+            <div class="form-group">
+              <label class="form-label">Institution</label>
+              <input class="form-input" type="text" placeholder="Enter your university or school" />
+            </div>
+            <div class="form-group">
+              <label class="form-label">Dates</label>
+              <input class="form-input" type="text" placeholder="Enter start and end years" />
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 14px;">
+          <h2 style="font-size: 0.98rem;">💼 Work Experience</h2>
+          <button type="button" id="add-experience-btn" class="link-primary">+ Add experience</button>
+        </div>
+        <div id="experience-list">
+          <div class="experience-row" style="margin-bottom: 12px;">
+            <div class="grid-3">
+              <div class="form-group">
+                <label class="form-label">Role</label>
+                <input class="form-input" type="text" placeholder="Enter your job title" />
+              </div>
+              <div class="form-group">
+                <label class="form-label">Company</label>
+                <input class="form-input" type="text" placeholder="Enter your company name" />
+              </div>
+              <div class="form-group">
+                <label class="form-label">Dates</label>
+                <input class="form-input" type="text" placeholder="Enter start and end dates" />
+              </div>
+            </div>
+            <div class="form-group">
+              <label class="form-label">Description</label>
+              <input class="form-input" type="text" placeholder="Describe your responsibilities and achievements" />
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 14px;">
+          <h2 style="font-size: 0.98rem;">⚙️ Skills</h2>
+          <button type="button" id="add-skill-btn" class="link-primary">+ Add skill</button>
+        </div>
+        <div class="form-group">
+          <input class="form-input" id="skill-input" type="text" placeholder="Enter a skill, then press Enter" />
+        </div>
+        <div id="skills-tag-list" class="pill-list"></div>
+      </div>
+      <div class="card">
+        <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 14px;">
+          <h2 style="font-size: 0.98rem;">📂 Projects</h2>
+          <button type="button" id="add-project-btn" class="link-primary">+ Add project</button>
+        </div>
+        <div id="projects-list">
+          <div class="project-row" style="margin-bottom: 12px;">
+            <div class="grid-2" style="gap: 14px;">
+              <div class="form-group">
+                <label class="form-label">Project name</label>
+                <input class="form-input" type="text" placeholder="Enter your project name" />
+              </div>
+              <div class="form-group">
+                <label class="form-label">Technologies</label>
+                <input class="form-input" type="text" placeholder="Enter tools and technologies" />
+              </div>
+            </div>
+            <div class="form-group">
+              <label class="form-label">Description</label>
+              <input class="form-input" type="text" placeholder="Describe your role and accomplishments" />
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 14px;">
+          <h2 style="font-size: 0.98rem;">🌐 Languages</h2>
+          <button type="button" id="add-language-btn" class="link-primary">+ Add language</button>
+        </div>
+        <div id="languages-list" class="grid-4">
+          <div class="form-group">
+            <label class="form-label">Language</label>
+            <input class="form-input" type="text" placeholder="Enter a language" />
+          </div>
+          <div class="form-group">
+            <label class="form-label">Proficiency</label>
+            <select class="form-select">
+              <option value="">Select proficiency</option>
+              <option>Native / Bilingual</option>
+              <option>Fluent (C1/C2)</option>
+              <option>Intermediate (B1/B2)</option>
+              <option>Basic (A1/A2)</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label class="form-label">Language</label>
+            <input class="form-input" type="text" placeholder="Enter a language" />
+          </div>
+          <div class="form-group">
+            <label class="form-label">Proficiency</label>
+            <select class="form-select">
+              <option value="">Select proficiency</option>
+              <option>Native / Bilingual</option>
+              <option>Fluent (C1/C2)</option>
+              <option>Intermediate (B1/B2)</option>
+              <option>Basic (A1/A2)</option>
+            </select>
+          </div>
+        </div>
+      </div>
+    </form>
+  </main>
+  <footer class="action-footer">
+    <div class="container action-footer-inner">
+      <div style="display: flex; align-items: center; gap: 14px;">
+        <button type="button" id="save-draft-btn" class="btn btn-outline btn-sm">💾 Save Draft</button>
+        <span id="draft-status" style="font-size: 0.8rem; color: var(--text-muted);">All changes saved just now</span>
+      </div>
+      <div class="action-buttons">
+        <button type="button" id="preview-cv-btn" class="btn btn-outline">👁 Preview CV</button>
+        <button type="button" id="save-continue-btn" class="btn btn-primary">Save &amp; Continue to Analysis &rarr;</button>
+      </div>
+    </div>
+  </footer>
+  <div id="cv-preview-modal" class="modal-backdrop">
+    <div class="modal-box">
+      <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 16px;">
+        <h2 style="font-size: 1.2rem;">CV Live Preview</h2>
+        <button type="button" id="close-preview-btn" class="btn btn-outline btn-sm">Close</button>
+      </div>
+      <div id="cv-preview-content" style="font-size: 0.9rem; line-height: 1.6;"></div>
+    </div>
+  </div>
+  <script src="app.js"></script>
+</body>
+</html>

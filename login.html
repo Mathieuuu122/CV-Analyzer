@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Login — CV Analyzer</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body class="bg-white">
+  <header class="navbar">
+    <div class="container navbar-inner">
+      <a href="Home.html" class="brand">
+        <span class="brand-icon">📄</span>
+        <span>CV Analyzer</span>
+      </a>
+      <a href="Home.html" class="link-primary">&larr; Back to Home</a>
+    </div>
+  </header>
+  <main class="auth-wrapper">
+    <div class="auth-card">
+      <div class="auth-icon">&rarr;</div>
+      <h1 class="page-title" style="margin-bottom: 6px;">Welcome Back</h1>
+      <p class="page-subtitle" style="margin-bottom: 24px;">Log in to continue improving your CV</p>
+      <form id="login-form">
+        <div class="form-group">
+          <label class="form-label" for="login-email">Email address</label>
+          <input class="form-input" type="email" id="login-email" placeholder="you@example.com" required />
+        </div>
+        <div class="form-group">
+          <label class="form-label" for="login-password">Password</label>
+          <input class="form-input" type="password" id="login-password" placeholder="••••••••" required />
+        </div>
+        <button type="submit" class="btn btn-primary" style="width: 100%; margin-top: 8px;">Sign In</button>
+      </form>
+      <p style="margin-top: 20px; font-size: 0.85rem; color: var(--text-muted); text-align: center;">
+        Don't have an account? <a href="Register.html" class="link-primary">Create an account</a>
+      </p>
+    </div>
+  </main>
+  <script src="app.js"></script>
+</body>
+</html>
